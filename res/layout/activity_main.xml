@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/g"
+    android:orientation="vertical" >
+
+    <TextView 
+	    android:id="@+id/lcdshow"
+	    android:textSize="13dp"
+	    android:gravity="center"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+	<TextView 
+	    android:id="@+id/sdShow"
+	    android:textSize="10dp"
+	    android:gravity="center"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/LCDtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText 
+            android:id="@+id/etLCD"
+            android:hint="@string/etLCD"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/shutdom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText 
+            android:id="@+id/time"
+            android:hint="@string/time"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/sec"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/shutdownNuTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText 
+            android:id="@+id/shutdownNumberet"
+            android:hint="@string/shutdownNuEt"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/number"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ShutdownCountdownTv"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/shutdown"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="shutdown"
+        android:text="@string/shutDownBt" />
+	<Button
+        android:id="@+id/resetting"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="resetting"
+        android:text="@string/resetting" />
+    <Button
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="cancle"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:id="@+id/numbertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numbertv" />
+
+</LinearLayout>
